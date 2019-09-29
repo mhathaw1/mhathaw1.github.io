@@ -28,11 +28,11 @@ h1, h2, h3 {
     background-color: #202020;
 }
 
-.navigation > li {
+.navigation li {
     float: right;
 }
 
-.navigation > li a {
+.navigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -40,6 +40,14 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
-li a:hover {
+.navigation li a:hover {
     background-color: #111;
+}
+
+li {
+    text-decoration: none;
+}
+
+#personalPhoto {
+    width: 150px;
 }
