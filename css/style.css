@@ -23,9 +23,7 @@ h1, h2, h3 {
 
 .container2 {
     display: grid;
-    margin: 2rem auto 2rem auto;
     grid-template-columns: 75% 25%;
-    grid-gap: 10px;
 }
 
 .navigation {
