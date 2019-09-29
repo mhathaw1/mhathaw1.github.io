@@ -3,26 +3,9 @@ html {
      background-repeat:no-repeat;
      background-size:cover;
 }
-#bg {
-    position: fixed;
-    top: -50%;
-    bottom: -50%;
-    min-width: 200%;
-    min-height: 200%
-}
-#bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-}
 
 body {
-    background-color: whitesmoke;
+    background-color: white;
     width: 1020px;
     margin: 0 auto;
 }
@@ -35,4 +18,28 @@ h1, h2, h3 {
     display: grid;
     margin: 2rem auto 2rem auto;
     width: 1000px;
+}
+
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #202020;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
