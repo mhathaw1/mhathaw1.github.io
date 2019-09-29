@@ -1,11 +1,11 @@
 html {
-    background-color: lightblue;
+    background-image: url("forestbackground.jpg")
 }
 
 body {
     background-color: blue;
+    width: 1020px;
 }
-
 
 h1, h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
