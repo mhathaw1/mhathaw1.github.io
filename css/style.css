@@ -3,10 +3,20 @@ html {
 }
 #bg {
     position: fixed;
+    top: -50%;
+    bottom: -50%;
+    min-width: 200%;
+    min-height: 200%
+}
+#bg img {
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 body {
