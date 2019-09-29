@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    /* background-color: white; */
+    background-color: white;
     fill-opacity: 0.8;
     width: 950px;
     margin: 0 auto;
@@ -24,8 +24,12 @@ h1, h2, h3 {
 
 .container2 {
     display: grid;
-    grid-template-columns: 2fr, 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
+}
+
+.container2 > div {
+    background-color: gray;
 }
 
 .navigation {
