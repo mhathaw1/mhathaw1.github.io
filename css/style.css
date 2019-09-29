@@ -17,7 +17,7 @@ h1, h2, h3 {
 .container {
     display: grid;
     margin: 2rem auto 2rem auto;
-    width: 1000px;
+    width: 900px;
 }
 
 .navigation {
@@ -28,11 +28,11 @@ h1, h2, h3 {
     background-color: #202020;
 }
 
-li {
+.navigation > li {
     float: right;
 }
 
-li a {
+.navigation > li a {
     display: block;
     color: white;
     text-align: center;
