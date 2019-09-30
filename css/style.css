@@ -6,13 +6,10 @@ html {
 }
 
 body {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.842);
     width: 950px;
     margin: 0 auto;
-}
-
-h1, h2, h3 {
-    
+    padding: 10px;
 }
 
 .container1 {
@@ -25,10 +22,6 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-}
-
-.container2 > div {
-    
 }
 
 .navigation {
