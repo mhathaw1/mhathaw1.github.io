@@ -12,6 +12,10 @@ body {
     padding: 10px;
 }
 
+p {
+    font-size: 18px;
+}
+
 .container1 {
     display: grid;
     margin: 2rem auto 2rem auto;
@@ -21,6 +25,7 @@ body {
 .container2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 20px 10px;
     grid-template-rows: 1fr;
 }
 
