@@ -6,8 +6,7 @@ html {
 }
 
 body {
-    background-color: white;
-    fill-opacity: 0.8;
+    background-color: rgba(255,255,255,0.9);
     width: 950px;
     margin: 0 auto;
 }
@@ -29,7 +28,7 @@ h1, h2, h3 {
 }
 
 .container2 > div {
-    background-color: gray;
+    
 }
 
 .navigation {
@@ -64,5 +63,5 @@ li a {
 }
 
 #personalPhoto {
-    width: 150px;
+    width: 200px;
 }
