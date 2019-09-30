@@ -52,14 +52,12 @@ p {
 .navigation li a:hover {
     background-color: #111;
 }
-
-li {
-    list-style: none;
-}
-li a {
+a {
     text-decoration: none;
 }
 
-#personalPhoto {
-    width: 200px;
+.sidephoto {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
