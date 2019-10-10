@@ -48,4 +48,25 @@ var nav = document.getElementById('access_nav'),
 	nav.addEventListener('click', function(e) {
 		body.className = body.className? '' : 'with_nav';
 		e.preventDefault();
-	});
+  });
+  
+// Modal can be opened
+function addModalEventListeners() {
+
+  const modalTriggerElement = document.querySelector('a', '.button');
+
+  const modalTriggerClickHandler = function() {
+    document.body.classList.add('modal-open');
+  };
+
+  modalTriggerElement.addEventListener('click', modalTriggerClickHandler);
+
+  // Modal can be closed
+  const modalCloseButton = document.querySelector('#modal button');
+
+  const modalCloseButtonClickHandler = function() {
+    document.body.classList.remove('modal-open');
+  };
+
+  modalCloseButton.addEventListener('click', modalCloseButtonClickHandler);
+}
