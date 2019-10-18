@@ -7,31 +7,40 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+        
         <div class="container1">
-
-            <p>
-                <a href="#main_nav" id="access_nav" class="access_aid">Skip to navigation</a>
-            </p>
-
-            <nav id="main_nav">
-                <p><a href="/test1.html">This</a><a href="/test2.html">About Me</a><a href="/test3.html">The other</a></p>
-                <p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
-            </nav>
-
+            
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="/test2.html">About</a>
+                    <a href="/projects.html">Projects</a>
+                </div>
+            </div>
 
             <h1>Michael Hathaway</h1>
             <section class="grid-item grid-item-1">
-                <h2 id="aboutMe">About Me</h2>
-                    <div class="container2">
-                        <div>
-                            <p>
-                                Commander William Adama: [President Roslin is bedridden, dying of cancer, and coughing profusely] What can I get you? President Laura Roslin: [sarcastically] A new body. Perhaps, one of those young Cylon models from the Resurrection Ship. Commander William Adama: I can't see you as a blonde. President Laura Roslin: You'd be surprised. [laughs] Commander William Adama: [President Roslin is bedridden, dying of cancer, and coughing profusely] What can I get you? President Laura Roslin: [sarcastically] A new body. Perhaps, one of those young Cylon models from the Resurrection Ship. Commander William Adama: I can't see you as a blonde. President Laura Roslin: You'd be surprised. [laughs] Doctor Gaius Baltar: [Baltar has a two-way argument with Roslin and Number Six at the same time] Well, quite frankly, I don't give a flying frak whether you believe me or not, all right? Because I've had it, I am... I'm tired of being pushed and prodded around like I'm some kind of toy. I'm not your plaything! Number Six, President Laura Roslin: [simultaneously, in stereo] Plaything? Doctor Gaius Baltar: I don't work for you and uh, quite frankly, I don't have to sit any more and take this kind of abuse from either of you!... Er, [points at Billy] Doctor Gaius Baltar: *you* either... either in *here*, either in there, wherever it is... Commander William Adama: Starbuck, what do you hear? Lt. Kara 'Starbuck' Thrace: Nothing but the rain. Commander William Adama: Then grab your gun and bring in the cat. Lt. Kara 'Starbuck' Thrace: Boom, boom, boom! Lt. Kara 'Starbuck' Thrace: [after Starbuck has to plan a vital mission] I never wanted this kind of responsibility. Commander William Adama: The Cylons never asked us what we wanted. Welcome to the big leagues.
-                            </p>
-                        </div>
-                        <div>
-                            <img src="css/personalphoto.jpg" class="sidephoto">
-                        </div>
+                <h2 id="aboutMe">Practice Portfolio Website!</h2>
+                
+                <!--- Modal Practice! --->
+                <button id="modalButton">Modal Practice!</button>
+                <div id="practiceModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Look! The button opens a thing!</p>
                     </div>
+                </div>
+
+                <div class="container2">
+                    <div>
+                        <p>
+                            Commander William Adama: [President Roslin is bedridden, dying of cancer, and coughing profusely] What can I get you? President Laura Roslin: [sarcastically] A new body. Perhaps, one of those young Cylon models from the Resurrection Ship. Commander William Adama: I can't see you as a blonde. President Laura Roslin: You'd be surprised. [laughs] Commander William Adama: [President Roslin is bedridden, dying of cancer, and coughing profusely] What can I get you? President Laura Roslin: [sarcastically] A new body. Perhaps, one of those young Cylon models from the Resurrection Ship. Commander William Adama: I can't see you as a blonde. President Laura Roslin: You'd be surprised. [laughs] Doctor Gaius Baltar: [Baltar has a two-way argument with Roslin and Number Six at the same time] Well, quite frankly, I don't give a flying frak whether you believe me or not, all right? Because I've had it, I am... I'm tired of being pushed and prodded around like I'm some kind of toy. I'm not your plaything! Number Six, President Laura Roslin: [simultaneously, in stereo] Plaything? Doctor Gaius Baltar: I don't work for you and uh, quite frankly, I don't have to sit any more and take this kind of abuse from either of you!... Er, [points at Billy] Doctor Gaius Baltar: *you* either... either in *here*, either in there, wherever it is... Commander William Adama: Starbuck, what do you hear? Lt. Kara 'Starbuck' Thrace: Nothing but the rain. Commander William Adama: Then grab your gun and bring in the cat. Lt. Kara 'Starbuck' Thrace: Boom, boom, boom! Lt. Kara 'Starbuck' Thrace: [after Starbuck has to plan a vital mission] I never wanted this kind of responsibility. Commander William Adama: The Cylons never asked us what we wanted. Welcome to the big leagues.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="css/personalphoto.jpg" class="sidephoto">
+                    </div>
+                </div>
             </section>
             <h2 id="projects">Stuff I've Worked On:</h2>
             <div class="slideshow-container">
@@ -39,19 +48,19 @@
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 3</div>
                   <img src="virtualpet.png" style="width:100%;">
-                  <div class="text">Caption Text</div>
+                  <div class="text">A Java-based virtual pet shelter console game!</div>
                 </div>
               
                 <div class="mySlides fade">
                   <div class="numbertext">2 / 3</div>
-                  <img src="temp2.jpeg" style="width:100%">
-                  <div class="text">Caption Two</div>
+                  <img src="reviews.png" style="width:100%">
+                  <div class="text">A full-stack Spring MVC / Java site with album reviews from the 80s and 90s!</div>
                 </div>
               
                 <div class="mySlides fade">
                   <div class="numbertext">3 / 3</div>
-                  <img src="temp3.jpeg" style="width:100%">
-                  <div class="text">Caption Three</div>
+                  <img src="portfolio.png" style="width:100%">
+                  <div class="text">This website! A chance to flex new html, css, and JavaScript skills! </div>
                 </div>
               
                 <!-- Next and previous buttons -->
@@ -66,65 +75,51 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
-            <section class="grid-item grid-item-2">
+            <section>
                 <article class="container2">
                     <div>
-                        <h3>Project 1</h3>
+                        <h3>Here's a header</h3>
                         <p>
-                            Description of project 1!
+                            This is just grid practice
                         </p>
                     </div>
                     <div>
-                        This will be an image of the project!
+                        <p>
+                            Thanks to grid, this is over on the right!
+                        </p>
                     </div>
                 </article>
                 <article class="container2">
                     <div>
-                        <h3>Project 2</h3>
+                        <h3>Also a header</h3>
                         <p>
-                            Description of project 2!
+                            Some paragraph text.
                         </p>
                     </div>
                     <div>
-                        This will be an image of the project!
+                        <p>
+                            Thanks to grid, this is also over on the right!
+                        </p> 
                     </div>
                 </article>
                 <article class="container2">
                     <div>
-                        <h3>Project 3</h3>
+                        <h3>Did I really need 3 headers?</h3>
                         <p>
-                            Description of project 3!
+                            Thanks to grid, even THIS is over on the right! 
                         </p>
                     </div>
                     <div>
-                        This will be an image of the project!
+                        <p>
+                            Some more paragraph text.
+                        </p>
                     </div>
                 </article>
-
-                <button type="button" class="collapsible">Open Section 1</button>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-                <button type="button" class="collapsible">Open Section 2</button>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-                <button type="button" class="collapsible">Open Section 3</button>
-                <div class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </div>
-
             </section>
         </div>
         <footer>
-            <a href="https://www.linkedin.com/in/michael-hathaway-3a8350190/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/mhathaw1" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/michael-hathaway-3a8350190/" class="fa fa-linkedin" target="_blank">LinkedIn!</a>
+            <a href="https://github.com/mhathaw1" class="fa fa-github" target="_blank">GitHub!</a>
         </footer>
         <script src="/js/app.js"></script>
     </body>

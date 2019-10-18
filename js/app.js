@@ -1,12 +1,27 @@
+//Collapsible!
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//Slideshow!
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -27,46 +42,47 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-var nav = document.getElementById('access_nav'),
-	    body = document.body;
-
-	nav.addEventListener('click', function(e) {
-		body.className = body.className? '' : 'with_nav';
-		e.preventDefault();
-  });
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
   
-// Modal can be opened
-function addModalEventListeners() {
+//Modal time!
 
-  const modalTriggerElement = document.querySelector('a', '.button');
+// Get the modal
+var modal = document.getElementById("practiceModal");
 
-  const modalTriggerClickHandler = function() {
-    document.body.classList.add('modal-open');
-  };
+// Get the button that opens the modal
+var btn = document.getElementById("modalButton");
 
-  modalTriggerElement.addEventListener('click', modalTriggerClickHandler);
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-  // Modal can be closed
-  const modalCloseButton = document.querySelector('#modal button');
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-  const modalCloseButtonClickHandler = function() {
-    document.body.classList.remove('modal-open');
-  };
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-  modalCloseButton.addEventListener('click', modalCloseButtonClickHandler);
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
